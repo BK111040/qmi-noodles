@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>旺旺Q米麵互動體驗</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- 背景輪播 -->
+  <div class="scrolling-bg">
+    <img src="bg1.jpg" />
+    <img src="bg2.jpg" />
+    <img src="bg3.jpg" />
+  </div>
+
+  <!-- 封面區塊 -->
+  <div class="overlay" id="cover">
+    <h1>旺旺Q米麵 冒險互動體驗</h1>
+    <button id="start-btn">
+      <img src="start.png" alt="start" id="start-img" />
+    </button>
+  </div>
+
+  <!-- 廚房場景 -->
+  <div class="scene hidden" id="kitchen">
+    <img src="kitchen.jpg" class="scene-bg" id="scene-bg" />
+    <button id="enter-btn">
+      <img src="start-hover.gif" alt="start" id="enter-img" />
+    </button>
+
+    <div id="table-area" class="hidden">
+      <div class="noodle-buttons">
+        <img src="kimchi.png" onclick="selectFlavor('kimchi')" />
+        <img src="herb.png" onclick="selectFlavor('herb')" />
+        <img src="sate.png" onclick="selectFlavor('sate')" />
+      </div>
+		<img src="table.png" class="table-img" />
+    </div>
+	  
+	  <div id="scene-text" class="scene-text hidden"></div>
+
+
+    <div id="eating" class="hidden">
+      <p id="slogan"></p>
+		<img id="eating-img" class="feather-horizontal" />
+    </div>
+  </div>
+	
+    <button id="back-btn" class="hidden">回首頁</button>
+	
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
